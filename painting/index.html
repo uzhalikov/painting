@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="actions">
+                <img title="Скачать" id="download" src="icons/download.png" alt="">
+                <img title="Сохранить" id="save" src="icons/save.png" alt="">
+                <img title="Очистить поле" id="clean" src="icons/trash.png" alt="">
+            </div>
+            <div class="cursors">
+                <img id="pencil" title="Карандаш" src="icons/pencil.png" alt="">
+                <img id="erase" title="Ластик" src="icons/eraser.png" alt="">
+            </div>
+            <input value="2" max="100" class="cursor__size" type="number" placeholder="Размер курсора">
+        </header>
+        <main>
+            <canvas class="canvas" id="canvas"></canvas>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

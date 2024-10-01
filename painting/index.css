@@ -1,0 +1,39 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 5px;
+}
+.actions, .cursors{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+header{
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+header img{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+main{
+    border: 1px solid;
+    height: 96vh;
+    width: calc(100vw - 10px);
+    border-radius: 5px;
+    cursor: url('pencil.png') 0 25, auto;
+}
+.cursor__size{
+    width: 50px;
+    height: 25px;
+    text-align: left;
+}
